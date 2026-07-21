@@ -148,7 +148,15 @@
       font-size: clamp(1.8rem, 3.5vw, 3.2rem); line-height: 1.15; color: var(--text);
     }
     .proceso-sub { margin-top: 1.25rem; font-size: .88rem; color: var(--muted); line-height: 1.7; }
-    .proceso-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+    .proceso-grid {
+      display: flex;
+      justify-content: center;
+    }
+
+    .proceso-item {
+      width: min(700px, 100%);
+      aspect-ratio: 4/3;
+    }    
     .proceso-item {
       aspect-ratio: 4/3; overflow: hidden; position: relative;
       background: var(--bg-2);
@@ -409,10 +417,6 @@
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="proceso-placeholder" style="display:none"><span>En proceso</span></div>
         <span class="proceso-caption">Boceto · 2025</span>
-      </div>
-      <div class="proceso-item reveal" style="transition-delay:.15s">
-        <div class="proceso-placeholder"><span>Próximamente</span></div>
-        <span class="proceso-caption">Proceso · 2025</span>
       </div>
     </div>
   </section>
