@@ -105,13 +105,13 @@
       opacity: 0; animation: fadeUp .9s 1.3s forwards;
     }
     .hero-cta:hover { background: var(--accent); color: var(--bg); }
-    .scroll-hint {
+    .-hint {
       position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%);
       display: flex; flex-direction: column; align-items: center; gap: .6rem;
       opacity: 0; animation: fadeUp .9s 1.9s forwards;
     }
-    .scroll-hint span { font-size: .58rem; letter-spacing: .3em; text-transform: uppercase; color: var(--muted); }
-    .scroll-line {
+    .-hint span { font-size: .58rem; letter-spacing: .3em; text-transform: uppercase; color: var(--muted); }
+    .-line {
       width: 1px; height: 36px;
       background: linear-gradient(to bottom, var(--muted), transparent);
       animation: pulse 2.2s 2.5s ease-in-out infinite;
@@ -373,7 +373,7 @@
       <a href="#sobre" class="hero-cta">Sé testigo</a>
     </div>
     <div class="scroll-hint" aria-hidden="true">
-      <span>Scroll</span>
+      <span> </span>
       <div class="scroll-line"></div>
     </div>
   </section>
